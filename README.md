@@ -1,4 +1,4 @@
-Secret Socks (SS) is an ssh-based SOCKS proxy originally written by Joshua Chan (http://nihilex.com/secret-socks). 
+Secret Socks (SS) is an ssh-based SOCKS proxy originally written by [Joshua Chan](http://nihilex.com/secret-socks). 
 
 The original source code is available from Joshua's website. 
 
