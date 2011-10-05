@@ -1,3 +1,3 @@
 Secret Socks (SS) is an ssh-based SOCKS proxy written by Joshua Chan. 
-It seems Joshua has stopped work on SS and since I am using SS on a daily basis, it will be a pity let this useful application become obsolete.
 
+Since work on SS has been idle by the author since 2009, I decide to pick up the code and will add features as I see fit. Suggestions and contributions are welcome.
