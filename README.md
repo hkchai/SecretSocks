@@ -6,6 +6,7 @@ Change Log:
 -----------
 
 [Oct 5, 2011] 1.0.3
+
 - Initial check in
 
 - Fixed two memory leak issues
