@@ -92,7 +92,7 @@
 			// Copy settings passwd to standalone box
 			[passwordField2 setStringValue: [passwordField stringValue]];
 		}
-
+        
 		isConnected = true;
 
 		// Initialize sshInterface with config settings
@@ -103,6 +103,7 @@
 		[sshInterface setServerSshObfuscatedKey:[keyField stringValue]];
 		[sshInterface setServerSshUsername:[usernameField stringValue]];
 		[sshInterface setServerSshPasswd:[passwordField stringValue]];
+        
 		// Connect
 		[sshInterface connectToServer:self];
 		
@@ -115,6 +116,11 @@
 		[sshInterface disconnectFromServer];
 		[sshInterface dealloc];
 	}
+}
+
+- (IBAction)stateChanged:(id)sender
+{
+    [self savePrefs];
 }
 
 
@@ -370,7 +376,6 @@
 	[preferences setInteger: [isAutoLogin state] forKey:@"isAutoLogin"];    
     [preferences synchronize];
 }
-
 
 
 // Delegate Functions

@@ -59,6 +59,7 @@
 - (IBAction)showStatus:(id)sender;
 - (IBAction)showHelp:(id)sender;
 - (IBAction)doConnect:(id)sender;
+- (IBAction)stateChanged:(id)sender;
 - (void)toggleCheckmark:(bool)status;
 - (void)toggleSOCKSSetting:(bool)status;
 - (void)loadPrefs;
