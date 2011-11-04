@@ -5,9 +5,11 @@ The original source code is available from Joshua's website.
 Change Log:
 -----------
 
-[Nov 4, 2011] 1.0.3
+[Nov 4, 2011] 1.0.4
 - Added autologin feature: the program will do auto-logon once it is launched
+
 - Enhanced security: Updated with latest version of ssh
+
 - Password-less logon: Support for public/private key
 
 [Oct 5, 2011] 1.0.3
