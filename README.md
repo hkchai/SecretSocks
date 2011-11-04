@@ -6,6 +6,7 @@ Change Log:
 -----------
 
 [Nov 4, 2011] 1.0.4
+
 - Added autologin feature: the program will do auto-logon once it is launched
 
 - Enhanced security: Updated with latest version of ssh
