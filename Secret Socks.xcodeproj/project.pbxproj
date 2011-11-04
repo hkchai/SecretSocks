@@ -20,6 +20,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E628399414641D5C00C5750B /* locked-socks.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5BA31E17100E6B0900C5F597 /* locked-socks.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +207,7 @@
 				5B3599FA100A79D90060C42D /* path4068.png in Resources */,
 				5B359DE1100BE3A00060C42D /* Credits.html in Resources */,
 				5BEC78C010506C45007DF70A /* getservice.py in Resources */,
+				E628399414641D5C00C5750B /* locked-socks.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

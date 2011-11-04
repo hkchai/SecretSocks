@@ -21,6 +21,7 @@
 	IBOutlet NSMenuItem *connectMenu;
 	IBOutlet NSMenuItem *disconnectMenu;
 	
+    // Settings menu
 	IBOutlet NSTabView *tabs;
 	IBOutlet NSTextField *hostnameField;
 	IBOutlet NSTextField *portnumField;
@@ -30,8 +31,12 @@
 	IBOutlet NSTextField *socksportField;
 	IBOutlet NSButton *applyToNetwork;
 	IBOutlet NSButton *toggleDrawer;
+    IBOutlet NSButton *isAsymKeysFirst;
+    IBOutlet NSButton *isAutoLogin;
 
+    // Log menu
 	IBOutlet NSTextView *statusLabel;
+    
 	IBOutlet NSButton *connectButton;
 	IBOutlet NSImageView *checkmark;
 	IBOutlet NSProgressIndicator *busySpin;

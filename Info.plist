@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>locked-socks</string>
+	<string>locked-socks.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.nihilex.SecretSocks</string>
 	<key>CFBundleInfoDictionaryVersion</key>

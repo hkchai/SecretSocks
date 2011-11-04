@@ -25,6 +25,8 @@
 	  @"", @"username",
 	  @"9999", @"socksPort",
 	  [NSNumber numberWithInt:1], @"applyToNetwork",
+	  [NSNumber numberWithInt:1], @"isAsymKeysFirst",
+	  [NSNumber numberWithInt:1], @"isAutoLogin",                          
 	  nil ]; // terminate the list
 	[preferences registerDefaults:dict];
 
@@ -72,8 +74,13 @@
 			// standalone passwd has priority if drawer is open
 		    [passwordField setStringValue: [passwordField2 stringValue]];
 		}
-		else if ([[passwordField stringValue] length] == 0) {
-			if ([[passwordField2 stringValue] length] == 0)  {
+        // If the user wants to try public/private keys first,
+        // no point to prompt for password
+		else if ([[passwordField stringValue] length] == 0 &&
+                 [isAsymKeysFirst state] == NSOffState) 
+        {
+			//
+            if ([[passwordField2 stringValue] length] == 0)  {
 				// Neither settings nor standalone has a passwd
 				[passwordDrawer open];
 				return;
@@ -347,6 +354,8 @@
 	[usernameField setStringValue:[preferences stringForKey:@"username"]];
 	[socksportField setStringValue:[preferences stringForKey:@"socksPort"]];
 	[applyToNetwork setState:[preferences integerForKey:@"applyToNetwork"]];
+   	[isAsymKeysFirst setState:[preferences integerForKey:@"isAsymKeysFirst"]];
+	[isAutoLogin setState:[preferences integerForKey:@"isAutoLogin"]];    
 }
 
 - (void)savePrefs
@@ -357,7 +366,9 @@
 	[preferences setObject: [usernameField stringValue] forKey:@"username"];
 	[preferences setObject: [socksportField stringValue] forKey:@"socksPort"];
 	[preferences setInteger: [applyToNetwork state] forKey:@"applyToNetwork"];
-	[preferences synchronize];
+	[preferences setInteger: [isAsymKeysFirst state] forKey:@"isAsymKeysFirst"];
+	[preferences setInteger: [isAutoLogin state] forKey:@"isAutoLogin"];    
+    [preferences synchronize];
 }
 
 
@@ -368,6 +379,11 @@
 {
 	[window center];
 	[self loadPrefs];
+    
+    // Auto login
+    if ([isAutoLogin state] == NSOnState) {
+        [self doConnect:self];
+    }
 }
 
 
