@@ -3,6 +3,7 @@
 //  Secret Socks
 //
 //  Created by Joshua Chan on 11/07/09.
+//  Enhanced by HK Chai Nov 2011
 //
 
 #import <Cocoa/Cocoa.h>
@@ -25,7 +26,6 @@
 	IBOutlet NSTabView *tabs;
 	IBOutlet NSTextField *hostnameField;
 	IBOutlet NSTextField *portnumField;
-	IBOutlet NSTextField *keyField;
 	IBOutlet NSTextField *usernameField;
 	IBOutlet NSTextField *passwordField;
 	IBOutlet NSTextField *socksportField;

@@ -5,13 +5,17 @@ The original source code is available from Joshua's website.
 Change Log:
 -----------
 
+[Nov 5, 2011] 1.0.5
+
+- Completely removed support for obfuscation key in code
+
 [Nov 4, 2011] 1.0.4
 
 - Added autologin feature: the program will do auto-logon once it is launched
 
-- Enhanced security: Updated with latest version of ssh
-
 - Password-less logon: Support for public/private key
+
+- Removed support for obfuscation key in UI
 
 [Oct 5, 2011] 1.0.3
 

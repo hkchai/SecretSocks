@@ -2,7 +2,8 @@
 //  ssh_interface.m
 //  Secret Socks
 //
-//  Created by Joshua Chan on 10/07/09.
+//  Created by Joshua Chan on 10/07/09
+//  Enhanced by HK Chai Nov 2011
 //
 
 #import "ssh_interface.h"

@@ -3,7 +3,7 @@
 //  Secret Socks
 //
 //  Created by Joshua Chan on 10/07/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Enhanced by HK Chai Nov 2011
 //
 
 #import <Cocoa/Cocoa.h>

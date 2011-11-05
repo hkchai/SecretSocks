@@ -3,6 +3,7 @@
 //  Secret Socks
 //
 //  Created by Joshua Chan on 11/07/09.
+//  Enhanced by HK Chai Nov 2011
 //
 
 #import "SecretSocksController.h"
@@ -21,7 +22,6 @@
 	NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
 	  @"" ,@"hostName",
 	  @"22" , @"portNumber",
-	  @"", @"obfuscationKey",
 	  @"", @"username",
 	  @"9999", @"socksPort",
 	  [NSNumber numberWithInt:1], @"applyToNetwork",
@@ -100,7 +100,6 @@
 		[sshInterface setLocalSocksPort:[socksportField stringValue]];
 		[sshInterface setServerSshPort:[portnumField stringValue]];
 		[sshInterface setServerHostname:[hostnameField stringValue]];
-		[sshInterface setServerSshObfuscatedKey:[keyField stringValue]];
 		[sshInterface setServerSshUsername:[usernameField stringValue]];
 		[sshInterface setServerSshPasswd:[passwordField stringValue]];
         
@@ -330,7 +329,6 @@
 	// Disable/enable all text fields
 	[hostnameField setEditable: !state];
 	[portnumField setEditable: !state];
-	[keyField setEditable: !state];
 	[usernameField setEditable: !state];
 	[passwordField setEditable: !state];
 	[socksportField setEditable: !state];
@@ -356,7 +354,6 @@
 {
 	[hostnameField setStringValue:[preferences stringForKey:@"hostName"]];
 	[portnumField setStringValue:[preferences stringForKey:@"portNum"]];
-	[keyField setStringValue:[preferences stringForKey:@"obfuscationKey"]];
 	[usernameField setStringValue:[preferences stringForKey:@"username"]];
 	[socksportField setStringValue:[preferences stringForKey:@"socksPort"]];
 	[applyToNetwork setState:[preferences integerForKey:@"applyToNetwork"]];
@@ -368,7 +365,6 @@
 {
 	[preferences setObject: [hostnameField stringValue] forKey:@"hostName"];
 	[preferences setObject: [portnumField stringValue] forKey:@"portNum"];
-	[preferences setObject: [keyField stringValue] forKey:@"obfuscationKey"];
 	[preferences setObject: [usernameField stringValue] forKey:@"username"];
 	[preferences setObject: [socksportField stringValue] forKey:@"socksPort"];
 	[preferences setInteger: [applyToNetwork state] forKey:@"applyToNetwork"];
