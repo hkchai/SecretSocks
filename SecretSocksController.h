@@ -37,6 +37,9 @@
     // Log menu
 	IBOutlet NSTextView *statusLabel;
     
+    // Help menu
+    IBOutlet NSTextView *helpText;
+    
 	IBOutlet NSButton *connectButton;
 	IBOutlet NSImageView *checkmark;
 	IBOutlet NSProgressIndicator *busySpin;

@@ -16,7 +16,6 @@
 	NSString *serverHostname;
 	NSString *serverSshUsername;
 	NSString *serverSshPasswd;
-	NSString *serverSshObfuscatedKey;
 	
 	TaskWrapper *sshTask;
 }
@@ -24,7 +23,6 @@
 @property(readwrite, assign) NSString *localSocksPort;
 @property(readwrite, assign) NSString *serverSshPort;
 @property(readwrite, assign) NSString *serverHostname;
-@property(readwrite, assign) NSString *serverSshObfuscatedKey;
 @property(readwrite, assign) NSString *serverSshUsername;
 @property(readwrite, assign) NSString *serverSshPasswd;
 

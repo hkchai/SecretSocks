@@ -29,6 +29,9 @@
 	  [NSNumber numberWithInt:1], @"isAutoLogin",                          
 	  nil ]; // terminate the list
 	[preferences registerDefaults:dict];
+    
+    NSAttributedString *helpStr = [[[NSAttributedString alloc] initWithString:@"Hello World"] autorelease];
+    [[helpText textStorage] setAttributedString:helpStr];
 
 	return self;
 }

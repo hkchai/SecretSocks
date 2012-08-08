@@ -14,7 +14,6 @@
 @synthesize localSocksPort;
 @synthesize serverSshPort;
 @synthesize serverHostname;
-@synthesize serverSshObfuscatedKey;
 @synthesize serverSshUsername;
 @synthesize serverSshPasswd;
 
@@ -36,11 +35,7 @@
 		serverHostname,
 		nil
 	];
-	// Obfuscation key is optional. If not specified, normal SSH will be used instead.
-	if ([serverSshObfuscatedKey length] > 0) {
-		[sshArguments insertObject: @"-zZ" atIndex: 0];
-		[sshArguments insertObject: serverSshObfuscatedKey atIndex: 1];
-	}
+
 	// Set launch path
 	[sshArguments insertObject: sshPath atIndex: 0];
 	// Set environment
