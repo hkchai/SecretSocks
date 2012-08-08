@@ -4,6 +4,10 @@ The original source code is available from Joshua's website.
 
 Change Log:
 -----------
+[Aug 8, 2012] 1.1.0
+- Code clean up
+- Upgraded SSH to latest 6.0p version
+- [BUG FIX] Statically linked SSL to prevent future upgrade of native SSL library affect the app
 
 [Nov 5, 2011] 1.0.5
 
